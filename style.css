@@ -1,0 +1,158 @@
+div img{
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}
+/*colores hexadecimales*/
+.color_hexadecimal_1{
+    background-color:goldenrod ;
+}
+.color_hexadecimal_2{
+    background-color:antiquewhite;
+}
+.color_hexadecimal_3{
+    background-color:goldenrod ;
+}
+.color_hexadecimal_4{
+    background-color:antiquewhite;
+}
+/*Colores RGB*/
+.color_RGB_1{
+    background-color: rgb(233, 27, 27);
+}
+.color_RGB_2{
+    background-color: rgb(236, 214, 214);
+}
+.color_RGB_3{
+    background-color: rgb(233, 27, 27);
+}
+.color_RGB_4{
+    background-color: rgb(236, 214, 214);
+}
+.color_RGB_5{
+    background-color: rgb(233, 27, 27);
+}
+/*Color gradiente lineal y radial*/
+.Gradiente_lineal{
+    background: radial-gradient(circle, red, yellow);
+}
+.Gradiente_radial{
+    background: radial-gradient(circle, blue, purple);
+
+}
+/*Estilos de texto*/
+.Style_text p{
+    text-transform: lowercase;
+    letter-spacing: 1ch;
+    text-shadow: 2px 1px 4px red;
+}
+
+.Style_text {
+    background: radial-gradient(circle, black, red ) ;
+}
+
+/*Fuente personalizada de google fonts*/
+.Funte_personalizada{
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: radial-gradient(circle, pink, rgb(0, 174, 255) );
+}
+
+/*Unidades rem*/
+.Unidades_rem{
+    background: radial-gradient(circle, rgb(4, 238, 255), rgb(198, 21, 221));
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+/*Unidades em*/
+.Unidades_em{
+    background: radial-gradient(circle, rgb(4, 238, 255), rgb(198, 21, 221));
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+/*Object-fit*/
+.Object-fit{
+    object-fit: none ;
+    background: radial-gradient(circle, red, yellow);
+}  
+@font-face{
+    font-family: "Mifuente";
+    src: url(fuentes/Saiyan-Sans.ttf);
+}
+header h1{
+    font-family: "Mifuente", sans-serif  ;
+    font-size: 50px;
+    color: black;
+    background-color: beige;
+    
+}
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url(img/Dragon-Ball-Z.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.galeria {
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(255, 217, 0, 0.767);
+}
+  
+div {
+    height: 190px;
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    vertical-align: top;
+    padding: 10px;
+    border-radius: 10px;
+}
+.item{
+    background: #00000050;
+}
+  
+  
+div p {
+    font-style: italic;
+    margin-top: 8px;
+    font-weight: bold;
+}
+/*modificacion para columnas variables*/
+.galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 217, 0, 0.767);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.galeria > div {
+    background-color: #ffffff60; /* fondo claro por defecto si no tiene clase */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    height: auto; /* ya no es necesario fijar altura */
+}
+
+.galeria img {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.galeria p {
+    font-style: italic;
+    margin-top: 8px;
+    font-weight: bold;
+}
